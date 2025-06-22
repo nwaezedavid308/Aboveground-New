@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+    --primary: 215 25% 27%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 215 25% 27%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 215 10% 40%;
+    --accent: 220 13% 91%;
+    --accent-foreground: 215 25% 27%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 215 25% 27%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 0 0% 100%;
+    --card: 215 28% 17%;
+    --card-foreground: 0 0% 100%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 215 28% 17%;
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 215 25% 27%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 215 25% 27%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom brand color utilities */
+.bg-brand-slate {
+  background-color: rgb(71 85 105); /* slate-600 */
+}
+
+.bg-brand-steel {
+  background-color: rgb(100 116 139); /* slate-500 */
+}
+
+.text-brand-slate {
+  color: rgb(71 85 105); /* slate-600 */
+}
+
+.text-brand-steel {
+  color: rgb(100 116 139); /* slate-500 */
+}
+
+.border-brand-slate {
+  border-color: rgb(71 85 105); /* slate-600 */
+}
+
+.border-brand-steel {
+  border-color: rgb(100 116 139); /* slate-500 */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
